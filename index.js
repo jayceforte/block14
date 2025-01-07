@@ -56,11 +56,11 @@ function getSum(numbers) {
  * @param {number[]} numbers an array of integers
  * @returns {number} the mean of the numbers
  */
-function getMean(numbers) {
+function getMean(numbers) {}
   let getMean =''
-  for(let i = 0;)
+  for(let i = 0; ;)
   // TODO
-}
+
 
 /**
  * @param {number[]} numbers an array of integers
@@ -68,7 +68,15 @@ function getMean(numbers) {
  */
 function getMin(numbers) {
   // TODO
+  let min = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+      min = numbers[i];
+    }
+  }
+  return min;
 }
+
 
 /**
  * @param {number[]} numbers an array of integers
@@ -87,6 +95,9 @@ function getMax(numbers) {
  */
 function getRange(numbers) {
   // TODO
+  function getRange(numbers) {
+    return getMax(numbers) - getMin(numbers);
+  }
 }
 
 /**
@@ -95,7 +106,16 @@ function getRange(numbers) {
  */
 function getEvens(numbers) {
   // TODO
+  const evenNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenNumbers.push(numbers[i]);
+    }
+  }
+  return evenNumbers;
 }
+
+
 
 /**
  * @param {number[]} numbers an array of integers
@@ -103,4 +123,12 @@ function getEvens(numbers) {
  */
 function getOdds(numbers) {
   // TODO
+  const oddNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+      oddNumbers.push(numbers[i]);
+    }
+  }
+  return oddNumbers;
 }
+
