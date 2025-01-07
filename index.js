@@ -37,6 +37,8 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
+  const userInputString = [1,2,3,4,5]
+      length(5)
   // TODO
 }
 
@@ -45,6 +47,8 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
+  let  getSum = 15
+  return getSum; 
   // TODO
 }
 
@@ -53,6 +57,8 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
+  let getMean =''
+  for(let i = 0;)
   // TODO
 }
 
@@ -69,6 +75,9 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
+  let max = 0;
+  while(getMin < getMax){getMin++;}
+  return getMin; 
   // TODO
 }
 
